@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The infinity table</title>
+	<meta name="description" content="t08. Superhero_application" charset="utf-8">
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<h1>
+		Superhero form
+	</h1>
+	<form>
+		<fieldset>
+			<legend>About the Superhero</legend>
+			<p>
+				<label for="text_name">Real Name</label>
+				<input type="text" id="text_name" name="name_entery" placeholder="Superhero real name" size="18"
+					autofocus>
+				<label for="text_superhero">Supehero Name</label>
+				<input type="text" name="text_superhero" placeholder="Superhero alias" size="18">
+				<label for="age">Age</label>
+				<input type="number_entery" id="age" name="age" min="1" max="999" step="1" size="5">
+				<br><br>
+				<label for="about">About</label>
+				<textarea name="info_area" id="about" rows="5" cols="70" maxlength="500"
+					placeholder="Information about the superhero, max 500 symbols"></textarea>
+			</p>
+			<p>
+				<label for="photo">Photo:</label>
+				<input type="file" id="photo" name="photo">
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Powers</legend>
+			<p>
+				<input type="checkbox" name="telekinesis" id="telekinesis">
+				<label for="telekinesis">Telekinesis</label>
+
+				<input type="checkbox" name="superStrengthSpeed" id="super">
+				<label for="super">Super strength or speed</label>
+
+				<input type="checkbox" name="shapeshifting" id="shape">
+				<label for="shape">Shapeshifting</label>
+
+				<input type="checkbox" name="flight" id="flight">
+				<label for="flight">Flight</label>
+
+				<input type="checkbox" name="elementalControl" id="elemental">
+				<label for="elemental">Elemental control</label>
+
+				<input type="checkbox" name="other" id="other">
+				<label for="other">Other</label>
+				<br>
+			<p>
+				<span>Level of control:</span>
+				<input type="range" name="levelControl" min="0" max="10" step="1" value="1">
+			</p>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Origin of Powers</legend>
+			<p>
+				<input type="radio" id="unknown" name="radiogroup" value="unknown">
+				<label for="unknown">Unknown</label>
+
+				<input type="radio" id="freak" name="radiogroup" value="freak">
+				<label for="freak">Freak lab accident</label>
+
+				<input type="radio" id="chosen" name="radiogroup" value="chosen">
+				<label for="chosen">Chosen by an ancient wise being</label>
+
+				<input type="radio" id="not_human" name="radiogroup" value="isNotHuman">
+				<label for="not_human">The superhero is not human</label>
+
+				<input type="radio" id="other" name="radiogroup" value="other">
+				<label for="other">Other</label>
+			</p>
+		</fieldset>
+		<br><input type="button" value="CLEAR" name="button_clear">
+		<input type="button" value="SEND" name="button_send">
+	</form>
+</body>
+
+</html>

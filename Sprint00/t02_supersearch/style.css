@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    height: 2em;
+}
+
+input {
+	width: 100%;
+	padding: 0 10px;
+    flex: 1;
+}
+
+button {
+    color: green;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+button:hover, input:hover {
+    color: red;
+}
