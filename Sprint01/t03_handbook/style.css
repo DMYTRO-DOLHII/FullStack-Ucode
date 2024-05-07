@@ -1,0 +1,80 @@
+body {
+	background: rgb(223, 255, 247);
+}
+
+h1 {
+	text-align: center;
+	font-size: 56px;
+}
+
+p {
+	margin: 15px;
+}
+
+td {
+	border: solid 1px grey;
+}
+
+.background-color {
+	background-color: rgb(55, 255, 109);
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.subtopic {
+	border: 2px solid rgb(0, 0, 0);
+	display: inline-subtopic;
+	margin: 20px 10px;
+	padding: 10px 10px;
+}
+
+.example-h1 {
+	text-align: center;
+	padding-left: 10px;
+	font-size: 50px;
+}
+
+.subtopic-text {
+	font-weight: 600;
+	font-size: 25px;
+}
+
+* {
+	box-sizing: border-box;
+	transition: all 0.5s;
+}
+
+@media (min-width: 320px) {
+	.subtopic {
+		width: calc(100% - 20px);
+	}
+
+	.example-h1 {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 768px) {
+	.subtopic {
+		width: calc(50% - 20px);
+	}
+
+	.example-h1 {
+		font-size: 30px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.subtopic {
+		width: calc(25% - 20px);
+	}
+
+	.example-h1 {
+		font-size: 40px;
+	}
+}

@@ -1,0 +1,133 @@
+h1 {
+	text-align: center;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(100, 1fr);
+	margin: 0 20px 20px 10px;
+	border: 3px solid #000000;
+	padding: 10px;
+}
+
+@media (min-width: 640px) {
+	.container>div:nth-child(1) {
+		grid-column: 1 / span 45;
+	}
+
+	.container>div:nth-child(2) {
+		grid-column: 47 / span 54;
+	}
+
+	.container>div:nth-child(3) {
+		grid-column: 1 / span 40;
+	}
+
+	.container>div:nth-child(4) {
+		grid-column: 42 / span 32;
+	}
+
+	.container>div:nth-child(5) {
+		grid-column: 75 / span 26;
+	}
+
+	.container>div:nth-child(6) {
+		grid-column: 1 / span 19;
+	}
+
+	.container>div:nth-child(7) {
+		grid-column: 21 / span 28;
+	}
+
+	.container>div:nth-child(8) {
+		grid-column: 54 / span 14;
+	}
+
+	.container>div:nth-child(9) {
+		grid-column: 69 / span 32;
+	}
+}
+
+@media (min-width: 640px) and (max-width: 1366px) {
+	.container>div:nth-child(1) {
+		grid-column: 1 / span 74;
+	}
+
+	.container>div:nth-child(2) {
+		grid-column: 1 / span 90;
+	}
+
+	.container>div:nth-child(3) {
+		grid-column: 1 / span 64;
+	}
+
+	.container>div:nth-child(4) {
+		grid-column: 1 / span 53;
+	}
+
+	.container>div:nth-child(5) {
+		grid-column: 54 / span 47;
+	}
+
+	.container>div:nth-child(6) {
+		grid-column: 1 / span 36;
+	}
+
+	.container>div:nth-child(7) {
+		grid-column: 38 / span 49;
+	}
+
+	.container>div:nth-child(8) {
+		grid-column: 1 / span 27;
+	}
+
+	.container>div:nth-child(9) {
+		grid-column: 29 / span 56;
+	}
+}
+
+@media (max-width: 640px) {
+	.container>div:nth-child(1) {
+		grid-column: 1 / span 74;
+	}
+
+	.container>div:nth-child(2) {
+		grid-column: 1 / span 90;
+	}
+
+	.container>div:nth-child(3) {
+		grid-column: 1 / span 71;
+	}
+
+	.container>div:nth-child(4) {
+		grid-column: 1 / span 62;
+		grid-row: 4;
+	}
+
+	.container>div:nth-child(5) {
+		grid-column: 1 / span 51;
+		grid-row: 5;
+	}
+
+	.container>div:nth-child(6) {
+		grid-column: 62 / span 40;
+		grid-row: 4 / 6;
+	}
+
+	.container>div:nth-child(7) {
+		grid-column: 1 / span 53;
+	}
+
+	.container>div:nth-child(8) {
+		grid-column: 56 / span 28;
+	}
+
+	.container>div:nth-child(9) {
+		grid-column: 1 / span 63;
+	}
+}

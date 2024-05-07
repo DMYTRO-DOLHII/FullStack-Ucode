@@ -1,0 +1,11 @@
+.man {
+    height: 80px;
+}
+
+.gauntlet {
+	height: 300px;
+}
+
+.gauntlet:hover + table .even td:nth-child(even), .gauntlet:hover + table .odd td:nth-child(odd) {
+    visibility: hidden;
+}

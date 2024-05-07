@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Oscorp Store Catalog</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="assets/images/logo.jpg" alt="Oscorp Logo"></a>
+		</div>
+		<div class="search">
+			<input type="text" placeholder="Search products...">
+			<button>Search</button>
+		</div>
+		<div class="telephone">
+			<p>Contact us: 123-456-789</p>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<nav>
+		<ul class="breadcrumbs">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Premium</a></li>
+			<li>New</li>
+		</ul>
+	</nav>
+	<section class="filters">
+		<h2>Filters</h2>
+		<div class="filter-options">
+			<h3>Category</h3>
+			<ul>
+				<li><input type="checkbox" id="category1"><label for="category1">Suits</label></li>
+				<li><input type="checkbox" id="category2"><label for="category2">Weapon</label></li>
+				<li><input type="checkbox" id="category3"><label for="category3">Protein Shakes</label></li>
+			</ul>
+		</div>
+		<div class="filter-options">
+			<h3>Price Range</h3>
+			<output for="price" id="price-output">$0</output>
+			<input type="range" id="price" name="price" min="0" max="100" value="50">
+			<output for="price" id="price-output">$50</output>
+
+		</div>
+	</section>
+	<section class="products">
+		<article class="product">
+			<a href="card.html">
+				<img src="assets/images/product1.png" alt="Product 1">
+				<h3>Suit 1</h3>
+				<p>$49.99</p>
+				<p>Availability: In stock</p>
+				<button>Add to Cart</button>
+			</a>
+		</article>
+		<article class="product">
+			<a href="card.html">
+				<img src="assets/images/product2.png" alt="Product 1">
+				<h3>Gun 1</h3>
+				<p>$49.99</p>
+				<p>Availability: In stock</p>
+				<button>Add to Cart</button>
+			</a>
+		</article>
+		<article class="product">
+			<a href="card.html">
+				<img src="assets/images/product3.png" alt="Product 1">
+				<h3>Protein 1</h3>
+				<p>$49.99</p>
+				<p>Availability: In stock</p>
+				<button>Add to Cart</button>
+			</a>
+		</article>
+		<article class="product">
+			<a href="card.html">
+				<img src="assets/images/product1.png" alt="Product 1">
+				<h3>Suit 2</h3>
+				<p>$49.99</p>
+				<p>Availability: In stock</p>
+				<button>Add to Cart</button>
+			</a>
+		</article>
+		<article class="product">
+			<a href="card.html">
+				<img src="assets/images/product2.png" alt="Product 1">
+				<h3>Gun 2</h3>
+				<p>$49.99</p>
+				<p>Availability: In stock</p>
+				<button>Add to Cart</button>
+			</a>
+		</article>
+		<article class="product">
+			<a href="card.html">
+				<img src="assets/images/product3.png" alt="Product 1">
+				<h3>Protein 2</h3>
+				<p>$49.99</p>
+				<p>Availability: In stock</p>
+				<button>Add to Cart</button>
+			</a>
+		</article>
+		<article class="product">
+			<a href="card.html">
+				<img src="assets/images/product2.png" alt="Product 1">
+				<h3>Gun 3</h3>
+				<p>$49.99</p>
+				<p>Availability: In stock</p>
+				<button>Add to Cart</button>
+			</a>
+		</article>
+	</section>
+	<footer>
+		<ul class="pagination">
+			<li><a href="#">&laquo;</a></li>
+			<li class="active"><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">&raquo;</a></li>
+		</ul>
+		<p>&copy; 2024 Oscorp. All rights reserved.</p>
+	</footer>
+</body>
+
+</html>
