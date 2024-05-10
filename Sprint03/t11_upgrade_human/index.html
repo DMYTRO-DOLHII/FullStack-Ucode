@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Upgrade Human</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="human">
+		<h2>Human</h2>
+		<img src="assets/images/human.jpg" alt="Human Image">
+		<ul>
+			<li id="firstName">First Name: </li>
+			<li id="lastName">Last Name: </li>
+			<li id="gender">Gender: </li>
+			<li id="age">Age: </li>
+			<li id="calories">Calories: </li>
+		</ul>
+		<button onclick="sleepFor()">Sleep For</button>
+		<button onclick="feed()">Feed</button>
+		<button onclick="turnIntoSuperhero()">Turn into Superhero</button>
+	</div>
+
+	<div id="superhero" style="display: none;">
+		<h2>Superhero</h2>
+		<img src="assets/images/superhero.jpg" alt="Superhero Image">
+		<ul>
+			<li id="firstNameSuperhero">First Name: </li>
+			<li id="lastNameSuperhero">Last Name: </li>
+			<li id="genderSuperhero">Gender: </li>
+			<li id="ageSuperhero">Age: </li>
+			<li id="caloriesSuperhero">Calories: </li>
+		</ul>
+		<button onclick="fly()">Fly</button>
+		<button onclick="fightWithEvil()">Fight With Evil</button>
+	</div>
+
+	<div class="am">
+		<h1 id="gifText"></h1>
+		<img id="sleepImg" src="" alt="">
+		<img id="fightGif" src="">
+		<img id="gifImage" src="" alt="">
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>

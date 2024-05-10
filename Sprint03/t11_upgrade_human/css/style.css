@@ -1,0 +1,45 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h2 {
+	text-align: center;
+}
+
+#human,
+#superhero {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #ccc;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+button {
+	margin-top: 10px;
+	padding: 5px 10px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+.am {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
