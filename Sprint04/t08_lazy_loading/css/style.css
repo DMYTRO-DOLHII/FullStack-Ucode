@@ -1,0 +1,37 @@
+body {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+img {
+	margin-bottom: 10px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.text {
+	position: sticky;
+	top: 0;
+	right: 0;
+}
+
+.text label {
+	background: rgb(235, 48, 48);
+	position: absolute;
+	padding: 5px;
+	border-radius: 5px;
+	right: 0;
+}
+
+label.finish {
+	background: rgb(38, 180, 38);
+}
+
+.images {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}

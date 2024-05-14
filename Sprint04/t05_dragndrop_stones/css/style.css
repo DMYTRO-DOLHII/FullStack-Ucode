@@ -1,0 +1,65 @@
+body {
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+}
+
+.stone {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	margin: 10px 10px;
+	cursor: pointer;
+	padding: 0;
+
+}
+
+.stone[value="off"] {
+	border: 2px solid black;
+}
+
+#yellow {
+	float: left;
+	left: 2%;
+	top: 23%;
+	background-color: rgb(240, 240, 104);
+}
+
+#orange {
+	float: left;
+	left: 2%;
+	top: 30%;
+	background-color: rgb(255, 145, 0);
+}
+
+#blue {
+	float: left;
+	left: 2%;
+	top: 16%;
+	background-color: rgb(80, 80, 213);
+}
+
+#red {
+	float: left;
+	left: 2%;
+	top: 2%;
+	background-color: #D21F3C;
+}
+
+#purple {
+	left: 2%;
+	top: 37%;
+	background-color: rgb(97, 31, 97);
+}
+
+#green {
+	float: left;
+	left: 2%;
+	top: 9%;
+	background-color: rgb(61, 145, 61);
+}

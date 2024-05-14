@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+	justify-content: center;
+	font-family: Arial, sans-serif;
+	background-color: #ffffff;
+	margin: 0 auto;
+	font-family: "Quicksand", sans-serif;
+	font-optical-sizing: auto;
+}
+
+header {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	background: rgb(238, 174, 202);
+	background: linear-gradient(142deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+	color: #ffffff;
+	font-size: 35px;
+}
+
+.search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search h2 {
+	margin-right: 52px;
+}
+
+.search input,
+button {
+	padding: 15px 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+.search input {
+	border: 1px solid #94bbe9;
+}
+
+.search button {
+	background-color: #ebaecb;
+	cursor: pointer;
+	margin-left: 5px;
+	width: 105px;
+}
+
+.search button:focus {
+	outline: none;
+	border: none;
+}
+
+#forecast {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.day {
+	background-color: #e7f2ff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 4px 8px -1px #878787;
+	box-shadow: 0px 4px 8px -1px #878787;
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
+	width: calc(11.333% - 2rem);
+}
+
+.day h2 {
+	margin-top: 0;
+}
+
+.day img {
+	height: 80px;
+	margin-bottom: 1rem;
+	width: 80px;
+}

@@ -1,0 +1,30 @@
+table {
+	outline: 4px solid black;
+	text-align: center;
+	border-collapse: collapse;
+	margin: auto;
+}
+
+th {
+	cursor: pointer;
+
+	padding: 10px;
+	width: 50px;
+	background-color: rgb(255, 24, 24);
+	border: 1px solid rgb(253, 247, 247);
+}
+
+tr {
+	border: 1px solid white;
+}
+
+td {
+	background-color: lightgrey;
+	border: 1px solid white;
+	padding: 10px;
+}
+
+#notification {
+	color: black;
+	padding-left: 1200px;
+}
