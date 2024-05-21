@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #ffffff;
+	font-family: "Radio Canada Big", sans-serif;
+	font-optical-sizing: auto;
+}
+
+.calculator {
+	background-color: #252525;
+	border-radius: 25px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	width: 450px;
+	-webkit-box-shadow: 0px 0px 37px -9px #000000;
+	box-shadow: 0px 0px 37px -9px #000000;
+}
+
+.display {
+	background-color: #252525;
+	border-bottom: 1px solid #707070;
+	color: #fff;
+	text-align: right;
+	padding: 30px;
+	position: relative;
+}
+
+.mode-switch {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 0.8em;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .4s;
+}
+
+.mode-switch:hover {
+	background-color: white;
+	color: black;
+}
+
+.history {
+	width: 100%;
+	max-height: 200px;
+	font-size: 1.5em;
+	color: #d1d1d1;
+	margin-top: 10px;
+	word-wrap: break-word;
+}
+
+.output {
+	width: 100%;
+	font-size: 2em;
+	word-wrap: break-word;
+}
+
+.buttons,
+.hex-buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	margin-top: 20px;
+}
+
+.hex-buttons {
+	display: none;
+}
+
+.btn {
+	background-color: rgba(0, 0, 0, 0.0);
+	border: none;
+	border-radius: 10px;
+	padding: 15px;
+	font-size: 1.2em;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	transition: .3s;
+}
+
+.btn.operator {
+	background-color: #FF9A8B;
+	background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+}
+
+.btn:hover {
+	background-color: white;
+	color: black;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.btn.operator:hover {
+	color: white;
+	background: none;
+	-webkit-box-shadow: inset 0px 0px 37px -9px #000000;
+	box-shadow: inset 0px 0px 37px -9px #000000;
+}
