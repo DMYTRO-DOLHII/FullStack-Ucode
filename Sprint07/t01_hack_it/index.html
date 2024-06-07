@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Encryption</title>
+</head>
+<body>
+    <h1>Save Your Password</h1>
+    <form action="/save" method="POST">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="salt">Salt:</label>
+        <input type="text" id="salt" name="salt" required><br>
+
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

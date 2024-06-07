@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Avenger Recruitment Form</title>
+</head>
+<body>
+    <h1>Join the Avengers</h1>
+    <form action="/submit" method="POST">
+        <fieldset>
+            <legend>Hero Information</legend>
+            <label for="realName">Real Name:</label>
+            <input type="text" id="realName" name="realName" required><br>
+
+            <label for="currentAlias">Current Alias:</label>
+            <input type="text" id="currentAlias" name="currentAlias" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+
+            <label for="about">About:</label>
+            <textarea id="about" name="about" required></textarea><br>
+
+            <label for="photo">Photo URL:</label>
+            <input type="text" id="photo" name="photo" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Powers</legend>
+            <label><input type="checkbox" name="powers" value="Super Strength"> Super Strength</label><br>
+            <label><input type="checkbox" name="powers" value="Flight"> Flight</label><br>
+            <label><input type="checkbox" name="powers" value="Invisibility"> Invisibility</label><br>
+            <label><input type="checkbox" name="powers" value="Telepathy"> Telepathy</label><br>
+            <label><input type="checkbox" name="powers" value="Telekinesis"> Telekinesis</label><br>
+
+            <label for="controlLevel">Level of Control:</label>
+            <input type="range" id="controlLevel" name="controlLevel" min="1" max="10"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Publicity</legend>
+            <label><input type="checkbox" name="publicity" value="Unknown"> Unknown</label><br>
+            <label><input type="checkbox" name="publicity" value="Like a Ghost"> Like a Ghost</label><br>
+            <label><input type="checkbox" name="publicity" value="I am in Comics"> I am in Comics</label><br>
+        </fieldset>
+
+        <button type="submit">Apply Now</button>
+    </form>
+</body>
+</html>

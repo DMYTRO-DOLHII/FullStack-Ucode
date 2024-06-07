@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Show Other Sites</title>
+</head>
+
+<body>
+	<form action="/fetch-url" method="POST">
+		<label for="url">Enter URL:</label>
+		<input type="url" id="url" name="url" required>
+		<button type="submit">Go</button>
+	</form>
+	<div id="content">
+		<!-- The fetched content will be displayed here -->
+	</div>
+</body>
+
+</html>

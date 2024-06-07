@@ -1,0 +1,20 @@
+{
+	"name": "csv-reader",
+	"version": "1.0.0",
+	"description": "CSV reader with Express",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"keywords": [
+		"csv",
+		"reader",
+		"express"
+	],
+	"author": "Your Name",
+	"license": "MIT",
+	"dependencies": {
+		"csv-parser": "^3.0.0",
+		"express": "^4.17.1"
+	}
+}

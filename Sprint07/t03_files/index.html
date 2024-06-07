@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>File Manager</title>
+	<style>
+		form,
+		h2 {
+			margin: 20px 0;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>File Manager</h1>
+
+	<h2>Create File</h2>
+	<form id="createForm" action="/create-file" method="POST">
+		<label for="fileName">File Name:</label>
+		<input type="text" id="fileName" name="fileName" required>
+		<br>
+		<label for="fileContent">File Content:</label>
+		<textarea id="fileContent" name="fileContent" required></textarea>
+		<br>
+		<button type="submit">Create File</button>
+	</form>
+
+	<h2>Files List</h2>
+	<ul id="filesList"></ul>
+
+	<div id="currentFile" style="display:none;">
+		<h2>Current File: <span id="currentFileName"></span></h2>
+		<p id="currentFileContent"></p>
+		<form id="deleteForm" action="/delete-file" method="POST">
+			<input type="hidden" id="deleteFileName" name="fileName">
+			<button type="submit">Delete File</button>
+		</form>
+	</div>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			fetch('/list-files')
+				.then(response => response.json())
+				.then(data => {
+					const filesList = document.getElementById('filesList');
+					filesList.innerHTML = '';
+					data.files.forEach(file => {
+						const li = document.createElement('li');
+						const a = document.createElement('a');
+						a.href = "#";
+						a.textContent = file;
+						a.onclick = () => selectFile(file);
+						li.appendChild(a);
+						filesList.appendChild(li);
+					});
+				});
+		});
+
+		function selectFile(fileName) {
+			fetch(`/select-file?file=${fileName}`)
+				.then(response => response.json())
+				.then(data => {
+					document.getElementById('currentFileName').textContent = data.fileName;
+					document.getElementById('currentFileContent').textContent = data.content;
+					document.getElementById('deleteFileName').value = data.fileName;
+					document.getElementById('currentFile').style.display = 'block';
+				});
+		}
+	</script>
+</body>
+
+</html>

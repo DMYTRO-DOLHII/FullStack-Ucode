@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charset Converter</title>
+</head>
+<body>
+    <h1>Charset Converter</h1>
+    <form id="charset-form" method="POST" action="/convert">
+        <label for="input-string">Input String:</label>
+        <input type="text" id="input-string" name="inputString" required>
+
+        <label for="charset">Select Charset:</label>
+        <select id="charset" name="charset">
+            <option value="utf8">UTF-8</option>
+            <option value="latin1">ISO-8859-1</option>
+            <option value="ascii">ASCII</option>
+        </select>
+
+        <button type="submit">Change Charset</button>
+        <button type="button" id="clear-button">Clear</button>
+    </form>
+
+    <div id="output">
+        <h2>Converted String:</h2>
+        <p id="converted-string"></p>
+    </div>
+
+    <script>
+        document.getElementById('clear-button').addEventListener('click', () => {
+            document.getElementById('input-string').value = '';
+            document.getElementById('converted-string').textContent = '';
+        });
+    </script>
+</body>
+</html>

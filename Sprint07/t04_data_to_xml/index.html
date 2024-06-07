@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Avenger Quotes</title>
+</head>
+
+<body>
+	<h1>Avenger Quotes</h1>
+
+	<div>
+		<h2>Original Quotes</h2>
+		<ul id="originalQuotes"></ul>
+	</div>
+
+	<div>
+		<button onclick="convertToXML()">Convert to XML</button>
+		<button onclick="convertFromXML()">Convert from XML</button>
+	</div>
+
+	<div>
+		<h2>Converted Quotes</h2>
+		<ul id="convertedQuotes"></ul>
+	</div>
+
+	<script>
+		const originalQuotes = [
+			{
+				id: 1,
+				author: 'Iron Man',
+				quote: 'I am Iron Man.',
+				photo: ['https://linktoimage.com/ironman.jpg'],
+				publishDate: '2008-05-02',
+				comments: { '2008-05-02': 'Iconic scene' }
+			},
+			{
+				id: 2,
+				author: 'Captain America',
+				quote: 'I can do this all day.',
+				photo: ['https://linktoimage.com/captain.jpg'],
+				publishDate: '2011-07-22',
+				comments: { '2011-07-22': 'Inspirational' }
+			},
+			{
+				id: 3,
+				author: 'Thor',
+				quote: 'Bring me Thanos!',
+				photo: ['https://linktoimage.com/thor.jpg'],
+				publishDate: '2018-04-27',
+				comments: { '2018-04-27': 'Epic moment' }
+			},
+			{
+				id: 4,
+				author: 'Hulk',
+				quote: 'Hulk smash!',
+				photo: ['https://linktoimage.com/hulk.jpg'],
+				publishDate: '2012-05-04',
+				comments: { '2012-05-04': 'Smash hit' }
+			}
+		];
+
+		document.addEventListener('DOMContentLoaded', () => {
+			const originalQuotesList = document.getElementById('originalQuotes');
+			originalQuotes.forEach(quote => {
+				const li = document.createElement('li');
+				li.textContent = `${quote.author}: "${quote.quote}"`;
+				originalQuotesList.appendChild(li);
+			});
+		});
+
+		function convertToXML() {
+			fetch('/convert-to-xml')
+				.then(() => alert('Converted to XML and saved to file.'));
+		}
+
+		function convertFromXML() {
+			fetch('/convert-from-xml')
+				.then(response => response.json())
+				.then(data => {
+					const convertedQuotesList = document.getElementById('convertedQuotes');
+					convertedQuotesList.innerHTML = '';
+					data.forEach(quote => {
+						const li = document.createElement('li');
+						li.textContent = `${quote.author}: "${quote.quote}"`;
+						convertedQuotesList.appendChild(li);
+					});
+				});
+		}
+	</script>
+</body>
+
+</html>

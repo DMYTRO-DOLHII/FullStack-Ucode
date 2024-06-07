@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Marvel API</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 20px;
+			background-color: #f0f0f0;
+		}
+
+		h1 {
+			color: #ff0000;
+		}
+
+		#content {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		.character {
+			margin-bottom: 20px;
+		}
+
+		.character img {
+			max-width: 100px;
+			margin-right: 10px;
+		}
+
+		.character h2 {
+			margin: 0 0 10px;
+		}
+
+		.character p {
+			margin: 0;
+		}
+
+		.details {
+			margin-top: 10px;
+			padding-left: 10px;
+			border-left: 2px solid #ccc;
+		}
+
+		.data-item {
+			margin: 5px 0;
+		}
+
+		.level-1 {
+			padding-left: 20px;
+			border-left: 2px solid #ddd;
+		}
+
+		.level-2 {
+			padding-left: 20px;
+			border-left: 2px solid #eee;
+		}
+
+		.level-3 {
+			padding-left: 20px;
+			border-left: 2px solid #f0f0f0;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 id="title">Marvel API Data</h1>
+	<div id="content">
+		<!-- Data from Marvel API will be displayed here -->
+	</div>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', async () => {
+			try {
+				const response = await fetch('/fetch-marvel-data');
+				const data = await response.json();
+
+				const contentDiv = document.getElementById('content');
+				contentDiv.innerHTML = '';
+
+				data.forEach(character => {
+					const characterDiv = document.createElement('div');
+					characterDiv.classList.add('character');
+
+					const characterName = document.createElement('h2');
+					characterName.textContent = character.name;
+
+					const characterDescription = document.createElement('p');
+					characterDescription.textContent = character.description || 'No description available.';
+
+					const characterImage = document.createElement('img');
+					characterImage.src = `${character.thumbnail.path}.${character.thumbnail.extension}`;
+
+					characterDiv.appendChild(characterImage);
+					characterDiv.appendChild(characterName);
+					characterDiv.appendChild(characterDescription);
+
+					const detailsDiv = document.createElement('div');
+					detailsDiv.classList.add('details');
+					detailsDiv.innerHTML = renderNestedData(character);
+
+					characterDiv.appendChild(detailsDiv);
+
+					contentDiv.appendChild(characterDiv);
+				});
+			} catch (error) {
+				console.error('Error fetching Marvel data:', error);
+			}
+		});
+
+		function renderNestedData(data, level = 0) {
+			if (typeof data !== 'object' || data === null) {
+				return `<div class="data-item level-${level}">${data}</div>`;
+			}
+
+			return Object.entries(data).map(([key, value]) => {
+				return `
+                    <div class="data-item level-${level}">
+                        <strong>${key}:</strong>
+                        ${renderNestedData(value, level + 1)}
+                    </div>
+                `;
+			}).join('');
+		}
+	</script>
+</body>
+
+</html>

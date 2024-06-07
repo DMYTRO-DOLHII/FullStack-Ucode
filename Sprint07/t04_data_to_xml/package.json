@@ -1,0 +1,15 @@
+{
+	"name": "avenger-quotes",
+	"version": "1.0.0",
+	"description": "A web app for displaying and converting Avenger quotes to and from XML.",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"author": "Your Name",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"xml2js": "^0.4.23"
+	}
+}

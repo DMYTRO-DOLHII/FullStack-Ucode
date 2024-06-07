@@ -1,0 +1,13 @@
+{
+	"name": "cookie-counter",
+	"version": "1.0.0",
+	"description": "Web page that shows the count of page loads for the last minute using cookies",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"cookie-parser": "^1.4.6",
+		"express": "^4.17.1"
+	}
+}

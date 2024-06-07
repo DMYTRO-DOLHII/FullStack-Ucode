@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSV Parser</title>
+	<style>
+		body {
+			background: rgb(34, 193, 195);
+			background: linear-gradient(331deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+			color: white;
+			max-height: 100vh;
+			height: 100vh;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			color: white;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid rgb(255, 255, 255);
+		}
+
+		th,
+		td {
+			padding: 8px;
+			text-align: left;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>CSV Parser</h1>
+	<span>Choose a file to upload: </span>
+	<input type="file" id="fileInput" accept=".csv">
+	<button onclick="uploadFile()">Parse</button>
+	<br><br>
+	<div id="filterSection" style="display:none;">
+		<label for="column">Filter:</label>
+		<select id="column"></select>
+		<input type="text" id="filterValue">
+		<button onclick="applyFilter()">Apply</button>
+	</div>
+
+	<table id="csvTable"></table>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

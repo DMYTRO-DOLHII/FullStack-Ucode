@@ -1,0 +1,14 @@
+{
+	"name": "make-square-image",
+	"version": "1.0.0",
+	"description": "A web application to make square images and separate images from R, G, and B channels.",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"express": "^4.17.1",
+		"request": "^2.88.2",
+		"sharp": "^0.28.3"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"name": "charset-converter",
+	"version": "1.0.0",
+	"description": "A simple charset converter web application",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"iconv-lite": "^0.6.3"
+	},
+	"author": "",
+	"license": "ISC"
+}
