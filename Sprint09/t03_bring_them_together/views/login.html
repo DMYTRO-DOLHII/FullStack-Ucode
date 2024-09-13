@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Login</h1>
+    <form id="loginForm">
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <a href="/register">Register</a>
+    <a href="/password-reminder">Ebanat opiat zabil parol? </a>
+    <div id="loginError" style="display: none; color: red;"></div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", async function (event) {
+            event.preventDefault();
+            const login = document.getElementById("login").value;
+            const password = document.getElementById("password").value;
+
+            const response = await fetch('/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ login, password })
+            });
+
+            const result = await response.json();
+            if (result.success) {
+                window.location.href = "/main";
+            } else {
+                const errorDiv = document.getElementById("loginError");
+                errorDiv.innerText = result.message;
+                errorDiv.style.display = "block";
+            }
+        });
+    </script>
+</body>
+
+</html>

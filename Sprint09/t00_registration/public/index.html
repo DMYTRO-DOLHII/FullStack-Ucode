@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <h1>Register New Agent</h1>
+
+    <!-- This section will show the error or success message -->
+    <div id="message" style="color: red;"></div>
+
+    <form action="/register" method="post">
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <script>
+        // Extract query parameters
+        const params = new URLSearchParams(window.location.search);
+
+        // Show error message if it exists
+        const error = params.get('error');
+        if (error) {
+            document.getElementById('message').textContent = error;
+        }
+
+        // Show success message if it exists
+        const success = params.get('success');
+        if (success) {
+            document.getElementById('message').style.color = 'green';
+            document.getElementById('message').textContent = success;
+        }
+    </script>
+</body>
+
+</html>
