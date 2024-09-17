@@ -1,0 +1,52 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+
+# Dependency directories
+jspm_packages/
+
+# Production
+build/
+dist/
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# dotenv environment variables file
+.env
+
+# IDE/editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system specific files
+.DS_Store
+Thumbs.db
+
+# NPM package-lock files
+package-lock.json
+yarn.lock
+
+# Miscellaneous
+*.tgz
+*.gzip
+*.zip
+*.tar
+*.7z
+*.rar
+
+# Ignore specific files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
