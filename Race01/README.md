@@ -1,2 +1,0 @@
-## Hearstone Shitty Version
-
