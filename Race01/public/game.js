@@ -60,13 +60,13 @@ socket.on("game_start", (data) => {
   document.getElementById("enemy-name").innerText = opLogin;
   document.getElementById("my-name").innerText = myLogin;
 
-  document.getElementById("enemy-portrait").src = "/avatar/" + opLogin + ".jpg";
-  document.getElementById("my-portrait").src = "/avatar/" + myLogin + ".jpg";
+  document.getElementById("enemy_icon").src = "/avatar/" + opLogin + ".jpg";
+  document.getElementById("my_icon").src = "/avatar/" + myLogin + ".jpg";
 
   document.getElementById("enemy-hp").innerText = data.enemyHp;
   document.getElementById("my-hp").innerText = data.myHp;
-  document.getElementById("enemy-mana").innerText = data.secondMana + " Mana";
-  document.getElementById("my-mana").innerText = data.firstMana + " Mana";
+  document.getElementById("enemy-mana").innerText = data.secondMana;
+  document.getElementById("my-mana").innerText = data.firstMana;
 });
 
 socket.on("timer", (data) => {
@@ -77,21 +77,21 @@ socket.on("turn", (data) => {
   turn = data.turn;
   if (data.turn) {
     document.getElementById("turn_nickname").innerText = myLogin + " turn";
-    document.getElementById("enemy-mana").innerText = data.secondMana + " Mana";
-    document.getElementById("my-mana").innerText = data.firstMana + " Mana";
+    document.getElementById("enemy-mana").innerText = data.secondMana;
+    document.getElementById("my-mana").innerText = data.firstMana;
     document.getElementById("cards").style.backgroundColor = "rgba(109, 109, 109, 0.78)";
   } else {
     document.getElementById("turn_nickname").innerText = opLogin + " turn";
-    document.getElementById("enemy-mana").innerText = data.secondMana + " Mana";
-    document.getElementById("my-mana").innerText = data.firstMana + " Mana";
+    document.getElementById("enemy-mana").innerText = data.secondMana;
+    document.getElementById("my-mana").innerText = data.firstMana;
     document.getElementById("cards").style.backgroundColor = "rgba(0, 0, 0, 0.78)";
   }
 });
 
 socket.on("mana", (data) => {
   myMana = data.firstMana;
-  document.getElementById("my-mana").innerText = data.firstMana + " Mana";
-  document.getElementById("enemy-mana").innerText = data.secondMana + " Mana";
+  document.getElementById("my-mana").innerText = data.firstMana;
+  document.getElementById("enemy-mana").innerText = data.secondMana;
 });
 
 socket.on("hp", (data) => {
