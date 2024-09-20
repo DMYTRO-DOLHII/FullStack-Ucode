@@ -1,440 +1,439 @@
 {
-  "size": 31,
-
-  "cards": [
-    {
-      "id": 1,
-      "name": "Abra",
-      "src": "./images/Abra.png",
-      "cost": 4,
-      "attack": 4
-    },
-    {
-      "id": 2,
-      "name": "Black Panther",
-      "src": "./images/Bellsprout.png",
-      "cost": 5,
-      "attack": 4
-    },
-    {
-      "id": 3,
-      "name": "Blue Marvel",
-      "src": "./images/bulbasaur.png",
-      "cost": 5,
-      "attack": 3
-    },
-    {
-      "id": 4,
-      "name": "Brood",
-      "src": "./images/caterpie",
-      "cost": 3,
-      "attack": 2
-    },
-    {
-      "id": 5,
-      "name": "Captain Marvel",
-      "src": "./images/charmander.png",
-      "cost": 4,
-      "attack": 4
-    },
-    {
-      "id": 6,
-      "name": "Deadpool",
-      "src": "./images/clefairy.png",
-      "cost": 1,
-      "attack": 1
-    },
-    {
-      "id": 7,
-      "name": "Doctor Strange",
-      "src": "./images/Diglet..png",
-      "cost": 3,
-      "attack": 3
-    },
-    {
-      "id": 8,
-      "name": "Ghost Rider",
-      "src": "./images/ekans.png",
-      "cost": 4,
-      "attack": 3
-    },
-    {
-      "id": 9,
-      "name": "Green Goblin",
-      "src": "./images/Geodude.png",
-      "cost": 3,
-      "attack": -3
-    },
-    {
-      "id": 10,
-      "name": "Hobgoblin",
-      "src": "./images/Growlithe.png",
-      "cost": 5,
-      "attack": -8
-    },
-    {
-      "id": 11,
-      "name": "Iceman",
-      "src": "./images/jigglypuff.png",
-      "cost": 1,
-      "attack": 2
-    },
-    {
-      "id": 12,
-      "name": "Kingpin",
-      "src": "./images/Machop.png",
-      "cost": 3,
-      "attack": 4
-    },
-    {
-      "id": 13,
-      "name": "Nick Fury",
-      "src": "./images/Mankey.png",
-      "cost": 4,
-      "attack": 5
-    },
-    {
-      "id": 14,
-      "name": "Nimrod",
-      "src": "./images/Meowth.png",
-      "cost": 5,
-      "attack": 6
-    },
-    {
-      "id": 15,
-      "name": "Ninja",
-      "src": "./images/Nidoran.png",
-      "cost": 1,
-      "attack": -2
-    },
-    {
-      "id": 16,
-      "name": "Rocket Raccoon",
-      "src": "./images/oddish.png",
-      "cost": 1,
-      "attack": 2
-    },
-    {
-      "id": 17,
-      "name": "Sandman",
-      "src": "./images/paras.png",
-      "cost": 5,
-      "attack": 3
-    },
-    {
-      "id": 18,
-      "name": "Shuri",
-      "src": "./images/pidgey.png",
-      "cost": 4,
-      "attack": 2
-    },
-    {
-      "id": 19,
-      "name": "Spectrum",
-      "src": "./images/pikachu.png",
-      "cost": 6,
-      "attack": 5
-    },
-    {
-      "id": 20,
-      "name": "Star-Lord",
-      "src": "./images/Poliwag.png",
-      "cost": 2,
-      "attack": 2
-    },
-    {
-      "id": 21,
-      "name": "The Hood",
-      "src": "./images/Psyduck.png",
-      "cost": 1,
-      "attack": -3
-    },
-    {
-      "id": 22,
-      "name": "The Void",
-      "src": "./images/rattata.png",
-      "cost": 4,
-      "attack": -10
-    },
-    {
-      "id": 23,
-      "name": "Ultron",
-      "src": "./images/sandshrew.png",
-      "cost": 6,
-      "attack": 8
-    },
-    {
-      "id": 24,
-      "name": "Venom",
-      "src": "./images/Slowpoke.png",
-      "cost": 3,
-      "attack": 3
-    },
-    {
-      "id": 25,
-      "name": "Viper",
-      "src": "./images/spearow.png",
-      "cost": 2,
-      "attack": 3
-    },
-    {
-      "id": 26,
-      "name": "Warpath",
-      "src": "./images/squirtle.png",
-      "cost": 4,
-      "attack": 5
-    },
-    {
-      "id": 27,
-      "name": "Wasp",
-      "src": "./images/Tentacool",
-      "cost": 0,
-      "attack": 1
-    },
-    {
-      "id": 28,
-      "name": "Witchfire",
-      "src": "./images/venonat.png",
-      "cost": 2,
-      "attack": 3
-    },
-    {
-      "id": 29,
-      "name": "Wolverine",
-      "src": "./images/vulpix.png",
-      "cost": 2,
-      "attack": 2
-    },
-    {
-      "id": 30,
-      "name": "Yellow Jacket",
-      "src": "./images/weedle.png",
-      "cost": 0,
-      "attack": 2
-    },
-    {
-      "id": 31,
-      "name": "Yondu",
-      "src": "./images/zubat.png",
-      "cost": 1,
-      "attack": 2
-    },
-    {
-      "id": 1,
-      "name": "Abra",
-      "src": "./images/Abra.png",
-      "cost": 4,
-      "attack": 4
-    },
-    {
-      "id": 2,
-      "name": "Black Panther",
-      "src": "./images/Bellsprout.png",
-      "cost": 5,
-      "attack": 4
-    },
-    {
-      "id": 3,
-      "name": "Blue Marvel",
-      "src": "./images/bulbasaur.png",
-      "cost": 5,
-      "attack": 3
-    },
-    {
-      "id": 4,
-      "name": "Brood",
-      "src": "./images/caterpie",
-      "cost": 3,
-      "attack": 2
-    },
-    {
-      "id": 5,
-      "name": "Captain Marvel",
-      "src": "./images/charmander.png",
-      "cost": 4,
-      "attack": 4
-    },
-    {
-      "id": 6,
-      "name": "Deadpool",
-      "src": "./images/clefairy.png",
-      "cost": 1,
-      "attack": 1
-    },
-    {
-      "id": 7,
-      "name": "Doctor Strange",
-      "src": "./images/Diglet..png",
-      "cost": 3,
-      "attack": 3
-    },
-    {
-      "id": 8,
-      "name": "Ghost Rider",
-      "src": "./images/ekans.png",
-      "cost": 4,
-      "attack": 3
-    },
-    {
-      "id": 9,
-      "name": "Green Goblin",
-      "src": "./images/Geodude.png",
-      "cost": 3,
-      "attack": -3
-    },
-    {
-      "id": 10,
-      "name": "Hobgoblin",
-      "src": "./images/Growlithe.png",
-      "cost": 5,
-      "attack": -8
-    },
-    {
-      "id": 11,
-      "name": "Iceman",
-      "src": "./images/jigglypuff.png",
-      "cost": 1,
-      "attack": 2
-    },
-    {
-      "id": 12,
-      "name": "Kingpin",
-      "src": "./images/Machop.png",
-      "cost": 3,
-      "attack": 4
-    },
-    {
-      "id": 13,
-      "name": "Nick Fury",
-      "src": "./images/Mankey.png",
-      "cost": 4,
-      "attack": 5
-    },
-    {
-      "id": 14,
-      "name": "Nimrod",
-      "src": "./images/Meowth.png",
-      "cost": 5,
-      "attack": 6
-    },
-    {
-      "id": 15,
-      "name": "Ninja",
-      "src": "./images/Nidoran.png",
-      "cost": 1,
-      "attack": -2
-    },
-    {
-      "id": 16,
-      "name": "Rocket Raccoon",
-      "src": "./images/oddish.png",
-      "cost": 1,
-      "attack": 2
-    },
-    {
-      "id": 17,
-      "name": "Sandman",
-      "src": "./images/paras.png",
-      "cost": 5,
-      "attack": 3
-    },
-    {
-      "id": 18,
-      "name": "Shuri",
-      "src": "./images/pidgey.png",
-      "cost": 4,
-      "attack": 2
-    },
-    {
-      "id": 19,
-      "name": "Spectrum",
-      "src": "./images/pikachu.png",
-      "cost": 6,
-      "attack": 5
-    },
-    {
-      "id": 20,
-      "name": "Star-Lord",
-      "src": "./images/Poliwag.png",
-      "cost": 2,
-      "attack": 2
-    },
-    {
-      "id": 21,
-      "name": "The Hood",
-      "src": "./images/Psyduck.png",
-      "cost": 1,
-      "attack": -3
-    },
-    {
-      "id": 22,
-      "name": "The Void",
-      "src": "./images/rattata.png",
-      "cost": 4,
-      "attack": -10
-    },
-    {
-      "id": 23,
-      "name": "Ultron",
-      "src": "./images/sandshrew.png",
-      "cost": 6,
-      "attack": 8
-    },
-    {
-      "id": 24,
-      "name": "Venom",
-      "src": "./images/Slowpoke.png",
-      "cost": 3,
-      "attack": 3
-    },
-    {
-      "id": 25,
-      "name": "Viper",
-      "src": "./images/spearow.png",
-      "cost": 2,
-      "attack": 3
-    },
-    {
-      "id": 26,
-      "name": "Warpath",
-      "src": "./images/squirtle.png",
-      "cost": 4,
-      "attack": 5
-    },
-    {
-      "id": 27,
-      "name": "Wasp",
-      "src": "./images/Tentacool",
-      "cost": 0,
-      "attack": 1
-    },
-    {
-      "id": 28,
-      "name": "Witchfire",
-      "src": "./images/venonat.png",
-      "cost": 2,
-      "attack": 3
-    },
-    {
-      "id": 29,
-      "name": "Wolverine",
-      "src": "./images/vulpix.png",
-      "cost": 2,
-      "attack": 2
-    },
-    {
-      "id": 30,
-      "name": "Yellow Jacket",
-      "src": "./images/weedle.png",
-      "cost": 0,
-      "attack": 2
-    },
-    {
-      "id": 31,
-      "name": "Yondu",
-      "src": "./images/zubat.png",
-      "cost": 1,
-      "attack": 2
-    }
-  ]
+    "size": 31,
+    "cards": [
+        {
+            "id": 1,
+            "name": "Abra",
+            "src": "./images/abra.png",
+            "cost": 4,
+            "attack": 8
+        },
+        {
+            "id": 2,
+            "name": "Bellsprout",
+            "src": "./images/bellsprout.png",
+            "cost": 2,
+            "attack": 10
+        },
+        {
+            "id": 3,
+            "name": "Bulbasaur",
+            "src": "./images/bulbasaur.png",
+            "cost": 9,
+            "attack": 5
+        },
+        {
+            "id": 4,
+            "name": "Caterpie",
+            "src": "./images/caterpie.png",
+            "cost": 5,
+            "attack": 2
+        },
+        {
+            "id": 5,
+            "name": "Charmander",
+            "src": "./images/charmander.png",
+            "cost": 5,
+            "attack": 9
+        },
+        {
+            "id": 6,
+            "name": "Clefairy",
+            "src": "./images/clefairy.png",
+            "cost": 5,
+            "attack": 4
+        },
+        {
+            "id": 7,
+            "name": "Diglett",
+            "src": "./images/diglett.png",
+            "cost": 8,
+            "attack": 3
+        },
+        {
+            "id": 8,
+            "name": "Ekans",
+            "src": "./images/ekans.png",
+            "cost": 4,
+            "attack": 5
+        },
+        {
+            "id": 9,
+            "name": "Geodude",
+            "src": "./images/geodude.png",
+            "cost": 9,
+            "attack": 5
+        },
+        {
+            "id": 10,
+            "name": "Growlithe",
+            "src": "./images/growlithe.png",
+            "cost": 7,
+            "attack": 4
+        },
+        {
+            "id": 11,
+            "name": "Jigglypuff",
+            "src": "./images/jigglypuff.png",
+            "cost": 4,
+            "attack": 2
+        },
+        {
+            "id": 12,
+            "name": "Machop",
+            "src": "./images/machop.png",
+            "cost": 8,
+            "attack": 5
+        },
+        {
+            "id": 13,
+            "name": "Mankey",
+            "src": "./images/Mankey.png",
+            "cost": 5,
+            "attack": 4
+        },
+        {
+            "id": 14,
+            "name": "Meowth",
+            "src": "./images/Meowth.png",
+            "cost": 7,
+            "attack": 6
+        },
+        {
+            "id": 15,
+            "name": "Nidoran",
+            "src": "./images/Nidoran.png",
+            "cost": 7,
+            "attack": 4
+        },
+        {
+            "id": 16,
+            "name": "Oddish",
+            "src": "./images/oddish.png",
+            "cost": 4,
+            "attack": 4
+        },
+        {
+            "id": 17,
+            "name": "Paras",
+            "src": "./images/paras.png",
+            "cost": 8,
+            "attack": 4
+        },
+        {
+            "id": 18,
+            "name": "Pidgey",
+            "src": "./images/pidgey.png",
+            "cost": 7,
+            "attack": 5
+        },
+        {
+            "id": 19,
+            "name": "Pikachu",
+            "src": "./images/pikachu.png",
+            "cost": 7,
+            "attack": 6
+        },
+        {
+            "id": 20,
+            "name": "Poliwag",
+            "src": "./images/poliwag.png",
+            "cost": 10,
+            "attack": 3
+        },
+        {
+            "id": 21,
+            "name": "Psyduck",
+            "src": "./images/psyduck.png",
+            "cost": 11,
+            "attack": 2
+        },
+        {
+            "id": 22,
+            "name": "Rattata",
+            "src": "./images/rattata.png",
+            "cost": 4,
+            "attack": 5
+        },
+        {
+            "id": 23,
+            "name": "Sandshrew",
+            "src": "./images/sandshrew.png",
+            "cost": 5,
+            "attack": 4
+        },
+        {
+            "id": 24,
+            "name": "Slowpoke",
+            "src": "./images/slowpoke.png",
+            "cost": 5,
+            "attack": 4
+        },
+        {
+            "id": 25,
+            "name": "Spearow",
+            "src": "./images/spearow.png",
+            "cost": 9,
+            "attack": 3
+        },
+        {
+            "id": 26,
+            "name": "Squirtle",
+            "src": "./images/squirtle.png",
+            "cost": 9,
+            "attack": 3
+        },
+        {
+            "id": 27,
+            "name": "Tentacool",
+            "src": "./images/tentacool.png",
+            "cost": 8,
+            "attack": 3
+        },
+        {
+            "id": 28,
+            "name": "Venonat",
+            "src": "./images/venonat.png",
+            "cost": 6,
+            "attack": 4
+        },
+        {
+            "id": 29,
+            "name": "Vulpix",
+            "src": "./images/vulpix.png",
+            "cost": 6,
+            "attack": 4
+        },
+        {
+            "id": 30,
+            "name": "Weedle",
+            "src": "./images/weedle.png",
+            "cost": 7,
+            "attack": 3
+        },
+        {
+            "id": 31,
+            "name": "Zubat",
+            "src": "./images/zubat.png",
+            "cost": 7,
+            "attack": 3
+        },
+        {
+            "id": 32,
+            "name": "Abra",
+            "src": "./images/abra.png",
+            "cost": 4,
+            "attack": 8
+        },
+        {
+            "id": 33,
+            "name": "Bellsprout",
+            "src": "./images/bellsprout.png",
+            "cost": 2,
+            "attack": 10
+        },
+        {
+            "id": 34,
+            "name": "Bulbasaur",
+            "src": "./images/bulbasaur.png",
+            "cost": 9,
+            "attack": 5
+        },
+        {
+            "id": 35,
+            "name": "Caterpie",
+            "src": "./images/caterpie.png",
+            "cost": 5,
+            "attack": 2
+        },
+        {
+            "id": 36,
+            "name": "Charmander",
+            "src": "./images/charmander.png",
+            "cost": 5,
+            "attack": 9
+        },
+        {
+            "id": 37,
+            "name": "Clefairy",
+            "src": "./images/clefairy.png",
+            "cost": 5,
+            "attack": 4
+        },
+        {
+            "id": 38,
+            "name": "Diglett",
+            "src": "./images/diglett.png",
+            "cost": 8,
+            "attack": 3
+        },
+        {
+            "id": 39,
+            "name": "Ekans",
+            "src": "./images/ekans.png",
+            "cost": 4,
+            "attack": 5
+        },
+        {
+            "id": 40,
+            "name": "Geodude",
+            "src": "./images/geodude.png",
+            "cost": 9,
+            "attack": 5
+        },
+        {
+            "id": 41,
+            "name": "Growlithe",
+            "src": "./images/growlithe.png",
+            "cost": 7,
+            "attack": 4
+        },
+        {
+            "id": 42,
+            "name": "Jigglypuff",
+            "src": "./images/jigglypuff.png",
+            "cost": 4,
+            "attack": 2
+        },
+        {
+            "id": 43,
+            "name": "Machop",
+            "src": "./images/machop.png",
+            "cost": 8,
+            "attack": 5
+        },
+        {
+            "id": 44,
+            "name": "Mankey",
+            "src": "./images/Mankey.png",
+            "cost": 5,
+            "attack": 4
+        },
+        {
+            "id": 45,
+            "name": "Meowth",
+            "src": "./images/Meowth.png",
+            "cost": 7,
+            "attack": 6
+        },
+        {
+            "id": 46,
+            "name": "Nidoran",
+            "src": "./images/Nidoran.png",
+            "cost": 7,
+            "attack": 4
+        },
+        {
+            "id": 47,
+            "name": "Oddish",
+            "src": "./images/oddish.png",
+            "cost": 4,
+            "attack": 4
+        },
+        {
+            "id": 48,
+            "name": "Paras",
+            "src": "./images/paras.png",
+            "cost": 8,
+            "attack": 4
+        },
+        {
+            "id": 49,
+            "name": "Pidgey",
+            "src": "./images/pidgey.png",
+            "cost": 7,
+            "attack": 5
+        },
+        {
+            "id": 50,
+            "name": "Pikachu",
+            "src": "./images/pikachu.png",
+            "cost": 7,
+            "attack": 6
+        },
+        {
+            "id": 51,
+            "name": "Poliwag",
+            "src": "./images/poliwag.png",
+            "cost": 10,
+            "attack": 3
+        },
+        {
+            "id": 52,
+            "name": "Psyduck",
+            "src": "./images/psyduck.png",
+            "cost": 11,
+            "attack": 2
+        },
+        {
+            "id": 53,
+            "name": "Rattata",
+            "src": "./images/rattata.png",
+            "cost": 4,
+            "attack": 5
+        },
+        {
+            "id": 54,
+            "name": "Sandshrew",
+            "src": "./images/sandshrew.png",
+            "cost": 5,
+            "attack": 4
+        },
+        {
+            "id": 55,
+            "name": "Slowpoke",
+            "src": "./images/slowpoke.png",
+            "cost": 5,
+            "attack": 4
+        },
+        {
+            "id": 56,
+            "name": "Spearow",
+            "src": "./images/spearow.png",
+            "cost": 9,
+            "attack": 3
+        },
+        {
+            "id": 57,
+            "name": "Squirtle",
+            "src": "./images/squirtle.png",
+            "cost": 9,
+            "attack": 3
+        },
+        {
+            "id": 58,
+            "name": "Tentacool",
+            "src": "./images/tentacool.png",
+            "cost": 8,
+            "attack": 3
+        },
+        {
+            "id": 59,
+            "name": "Venonat",
+            "src": "./images/venonat.png",
+            "cost": 6,
+            "attack": 4
+        },
+        {
+            "id": 60,
+            "name": "Vulpix",
+            "src": "./images/vulpix.png",
+            "cost": 6,
+            "attack": 4
+        },
+        {
+            "id": 61,
+            "name": "Weedle",
+            "src": "./images/weedle.png",
+            "cost": 7,
+            "attack": 3
+        },
+        {
+            "id": 62,
+            "name": "Zubat",
+            "src": "./images/zubat.png",
+            "cost": 7,
+            "attack": 3
+        }
+    ]
 }

@@ -8,18 +8,13 @@
 </head>
 
 <body>
+    <div id="overlay"></div>
     <div id="loading-container">
-        <a class="back" href="/" style="color: red;">Nazad</a>
-        <div id="waiting_for_opponent" style="display: none; color: white;">
-            WAITING FOR OPPONENT
-        </div>
-        <div id="opponent_login" style="display: none; color: white;">
-            Your opponent: <span id="opponent"></span>
-        </div>
-        <div id="opponent_disconnected" style="display: none; color: white;">
-            Your opponent disconnected
-            <a class="back" href="/">Nazad poshli</a>
-        </div>
+        <a class="back" href="/" style="color: rgb(174, 0, 168);">Nazad</a>
+        <div id="waiting_for_opponent" style="display: none; color: white;">Ozhidaem bedolagu</div>
+        <div id="opponent_login" style="display: none; color: white;">Bedolaga: <span id="opponent"></span></div>
+        <div id="opponent_disconnected" style="display: none; color: white;">Bedolaga poshel naher<a class="back"
+                href="/">Nazad poshli</a></div>
     </div>
 
     <div id="game_board" style="display: none">
@@ -64,10 +59,10 @@
             <div class="center">
                 <div class="card-deck-container">
                     <div class="card-deck_image-container">
-                        <img src="../images/card-back.png" id="card-deck" alt="Back of Card" />
+                        <img src="../images/cardback.jpg" id="card-deck" alt="Back of Card" style="display: none;"/>
                     </div>
                 </div>
-                <button id="pass_btn" class="button" onclick="passOnClick()">Done</button>
+                <button id="done" class="button" onclick="doneOnClick()">Done</button>
             </div>
             <div id="cards"></div>
         </div>
@@ -75,7 +70,7 @@
         <div id="game_over" style="display: none">
             <div class="game_over-container">
                 <h1 id="game_over_message"></h1>
-                <a href="/" class="back-link">Go nazad</a>
+                <a href="/" class="back-link" style="color: white; outline: none;">Go nazad</a>
             </div>
         </div>
 
