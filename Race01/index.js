@@ -8,12 +8,12 @@ const express = require('express');
 const http = require('http');
 const socketio = require('socket.io');
 
-const gameRoom = require('./server/gameRoom');
+const gameSession = require('./server/gameSession');
 
-const loginRouter = require('./server/loginRouter');
-const gameRouter = require('./server/gameRouter');
-const imageRouter = require('./server/imageRouter');
-const mainRouter = require('./server/mainRouter');
+const loginRouter = require('./server/routes');
+const gameRouter = require('./server/routes');
+const imageRouter = require('./server/routes');
+const mainRouter = require('./server/routes');
 
 const app = express();
 const server = http.createServer(app);
@@ -91,7 +91,7 @@ io.on('connection', (socket) => {
         socket.emit('opponent_connected', { myLogin: myLogin, opLogin: opLogin });
         rooms[room_id][0].emit('opponent_connected', { myLogin: opLogin, opLogin: myLogin });
         let timerT = setTimeout(() => {
-            gameRoom(rooms[room_id][0], rooms[room_id][1]);
+            gameSession(rooms[room_id][0], rooms[room_id][1]);
         }, 3000);
         socket.request.session.data.timerT = timerT;
     }
